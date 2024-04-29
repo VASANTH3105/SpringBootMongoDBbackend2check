@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"*", "https://bitvbs.vercel.app/"})
 @RequestMapping("api/v1/drivermaster")
 public class DriverController {
 
@@ -36,7 +36,7 @@ public class DriverController {
     }
 
     @RequestMapping("/search/{id}")
-    private Driver getSriver(@PathVariable(name = "id")String driverid) {
+    private Driver getDriver(@PathVariable(name = "id")String driverid) {
         return driverServices.getDriverByID(driverid);
     }
 }

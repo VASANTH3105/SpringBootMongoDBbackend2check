@@ -8,23 +8,24 @@ public class Driver {
 
     @Id
     private String _id;
-    private String staffId;
+    private String staffid;
     private String name;
-    private String licenseNo;
-    private String licenseType;
-    private String expDate;
+    private String licenseno;
+    private String licensetype;
+    private String expdate;
     private String address;
-    private String mobileNo;
+    private String mobileno;
 
-    public Driver(String _id, String staffId, String name, String licenseNo, String licenseType, String expDate, String address, String mobileNo) {
+
+    public Driver(String _id, String staffid, String name, String licenseno, String licensetype, String expdate, String address, String mobileno) {
         this._id = _id;
-        this.staffId = staffId;
+        this.staffid = staffid;
         this.name = name;
-        this.licenseNo = licenseNo;
-        this.licenseType = licenseType;
-        this.expDate = expDate;
+        this.licenseno = licenseno;
+        this.licensetype = licensetype;
+        this.expdate = expdate;
         this.address = address;
-        this.mobileNo = mobileNo;
+        this.mobileno = mobileno;
     }
 
     public Driver() {
@@ -34,77 +35,77 @@ public class Driver {
         return _id;
     }
 
-    public String getStaffId() {
-        return staffId;
+    public void set_id(String _id) {
+        this._id = _id;
+    }
+
+    public String getStaffid() {
+        return staffid;
+    }
+
+    public void setStaffid(String staffid) {
+        this.staffid = staffid;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getLicenseNo() {
-        return licenseNo;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLicenseType() {
-        return licenseType;
+    public String getLicenseno() {
+        return licenseno;
     }
 
-    public String getExpDate() {
-        return expDate;
+    public void setLicenseno(String licenseno) {
+        this.licenseno = licenseno;
+    }
+
+    public String getLicensetype() {
+        return licensetype;
+    }
+
+    public void setLicensetype(String licensetype) {
+        this.licensetype = licensetype;
+    }
+
+    public String getExpdate() {
+        return expdate;
+    }
+
+    public void setExpdate(String expdate) {
+        this.expdate = expdate;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public String getMobileNo() {
-        return mobileNo;
-    }
-
-    public void set_id(String _id) {
-        this._id = _id;
-    }
-
-    public void setStaffId(String staffId) {
-        this.staffId = staffId;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setLicenseNo(String licenseNo) {
-        this.licenseNo = licenseNo;
-    }
-
-    public void setLicenseType(String licenseType) {
-        this.licenseType = licenseType;
-    }
-
-    public void setExpDate(String expDate) {
-        this.expDate = expDate;
-    }
-
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public void setMobileNo(String mobileNo) {
-        this.mobileNo = mobileNo;
+    public String getMobileno() {
+        return mobileno;
+    }
+
+    public void setMobileno(String mobileno) {
+        this.mobileno = mobileno;
     }
 
     @Override
     public String toString() {
         return "Driver{" +
                 "_id='" + _id + '\'' +
-                ", staffId='" + staffId + '\'' +
+                ", staffid='" + staffid + '\'' +
                 ", name='" + name + '\'' +
-                ", licenseNo='" + licenseNo + '\'' +
-                ", licenseType='" + licenseType + '\'' +
-                ", expDate='" + expDate + '\'' +
+                ", licenseno='" + licenseno + '\'' +
+                ", licensetype='" + licensetype + '\'' +
+                ", expdate='" + expdate + '\'' +
                 ", address='" + address + '\'' +
-                ", mobileNo='" + mobileNo + '\'' +
+                ", mobileno='" + mobileno + '\'' +
                 '}';
     }
 }
